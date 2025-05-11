@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark .container {
+  background-color: #1f1f1f;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.input-group input, .input-group button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.filters button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+.active-filter {
+  background-color: #17a2b8 !important;
+}
+
+.item-list, .wasted-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-actions button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.safe { background-color: #d4edda; }
+.near { background-color: #fff3cd; }
+.expired { background-color: #f8d7da; }
+.wasted-list li {
+  background: #e2e3e5;
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.dark .input-group input,
+.dark .input-group button,
+.dark .filters button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .item-actions button {
+  background-color: #555;
+  color: white;
+}
+
+.dark .item {
+  border: 1px solid #444;
+}
